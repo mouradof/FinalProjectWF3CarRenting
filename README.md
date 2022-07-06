@@ -15,11 +15,11 @@ git clone https://github.com/mouradof/FinalProjectWF3CarRenting.git
 ```
  
 ```
- docker-compose build
- docker-compose up -d
+docker-compose build
+docker-compose up -d
 ```
 ```
- docker exec -it php8-sf6 bash
+docker exec -it php8-sf6 bash
 ```
 ```
 cd FinalProjectWF3CarRenting

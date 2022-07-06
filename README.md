@@ -30,25 +30,25 @@ cd FinalProjectWF3CarRenting
 ```
 
 ```
-$  composer install
+composer install
 ```
 
 ```
-$  npm install
-$  npm run build
+npm install
+npm run build
 ```
 
 ```
-$  symfony console doctrine:fixtures:load
+symfony console doctrine:fixtures:load
 ```
 
 ```
-$  symfony serve -d
+symfony serve -d
 ```
 
 ```
-$  adduser username
-$  chown username:username -R
+adduser username
+chown username:username -R
 ```
 
 Your application is available at http://127.0.0.1:8000

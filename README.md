@@ -4,7 +4,7 @@ Final project for the validation of the professional title Bac +2 web developer 
 
 Link of the trello, to see the progress of the project during its conception 
 
-=> &nbsp;&nbsp;https://trello.com/b/RIsb7nG7/final-project-wf3-car-renting.
+=> &nbsp;&nbsp;https://trello.com/b/RIsb7nG7/final-project-wf3-car-renting
 
 Link of the Figma, to see the progress of the project during the realization of the model
 

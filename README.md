@@ -11,31 +11,23 @@ I chose to work with docker, in order to optimize the project sharing with a ver
 Just run the following commands :
 
 ```
-
- git clone https://github.com/mouradof/FinalProjectWF3CarRenting.git
- 
+git clone https://github.com/mouradof/FinalProjectWF3CarRenting.git
 ```
  
 ```
  docker-compose build
  docker-compose up -d
- 
 ```
 ```
  docker exec -it php8-sf6 bash
- 
 ```
 ```
-
 cd FinalProjectWF3CarRenting
-
 ```
 
 ```
-
 adduser username
 chown username:username -R
-
 ```
 
 Your application is available at http://127.0.0.1:8000

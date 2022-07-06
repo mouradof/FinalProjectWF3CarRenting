@@ -12,21 +12,21 @@ Link of the Figma, to see the progress of the project during the realization of 
 
 I chose to work with docker, in order to optimize the project sharing with a version chosen by myself. I chose to use the Symfony 6.0 framework in PHP 8.0.13.
 
-Just run the following commands :
+Just run the following commands (for osx, windows, linux) :
 
 ```
-$ git clone https://github.com/mouradof/FinalProjectWF3CarRenting.git
+git clone https://github.com/mouradof/FinalProjectWF3CarRenting.git
 ```
  
 ```
-$  docker-compose build
-$  docker-compose up -d
+docker-compose build
+docker-compose up -d
 ```
 ```
-$  docker exec -it php8-sf6 bash
+docker exec -it php8-sf6 bash
 ```
 ```
-$  cd FinalProjectWF3CarRenting
+cd FinalProjectWF3CarRenting
 ```
 
 ```

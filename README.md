@@ -30,8 +30,29 @@ cd FinalProjectWF3CarRenting
 ```
 
 ```
+composer install
+```
+
+```
+npm install
+npm run build
+```
+
+```
+symfony console doctrine:fixtures:load
+```
+
+```
+symfony serve -d
+```
+
+```
 adduser username
 chown username:username -R
 ```
 
 Your application is available at http://127.0.0.1:8000
+
+Admin Inteface at http://127.0.0.1:8000/admin
+
+PhpMyAdmin at ...

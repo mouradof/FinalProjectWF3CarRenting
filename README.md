@@ -15,40 +15,40 @@ I chose to work with docker, in order to optimize the project sharing with a ver
 Just run the following commands :
 
 ```
-<sub>$</sub>  git clone https://github.com/mouradof/FinalProjectWF3CarRenting.git
+$ git clone https://github.com/mouradof/FinalProjectWF3CarRenting.git
 ```
  
 ```
-<sub>$</sub>  docker-compose build
-<sub>$</sub>  docker-compose up -d
+$  docker-compose build
+$  docker-compose up -d
 ```
 ```
-<sub>$</sub>  docker exec -it php8-sf6 bash
+$  docker exec -it php8-sf6 bash
 ```
 ```
-<sub>$</sub>  cd FinalProjectWF3CarRenting
-```
-
-```
-<sub>$</sub>  composer install
+$  cd FinalProjectWF3CarRenting
 ```
 
 ```
-<sub>$</sub>  npm install
-<sub>$</sub>  npm run build
+$  composer install
 ```
 
 ```
-<sub>$</sub>  symfony console doctrine:fixtures:load
+$  npm install
+$  npm run build
 ```
 
 ```
-<sub>$</sub>  symfony serve -d
+$  symfony console doctrine:fixtures:load
 ```
 
 ```
-<sub>$</sub>  adduser username
-<sub>$</sub>  chown username:username -R
+$  symfony serve -d
+```
+
+```
+$  adduser username
+$  chown username:username -R
 ```
 
 Your application is available at http://127.0.0.1:8000

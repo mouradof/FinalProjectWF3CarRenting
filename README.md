@@ -23,10 +23,7 @@ docker-compose build
 docker-compose up -d
 ```
 ```
-docker exec -it php8-sf6 bash
-```
-```
-cd FinalProjectWF3CarRenting
+docker exec -it car-renting bash
 ```
 
 ```

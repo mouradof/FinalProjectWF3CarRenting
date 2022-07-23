@@ -36,6 +36,14 @@ npm run build
 ```
 
 ```
+symfony console doctrine:database:create
+```
+
+```
+symfony console doctrine:migrations:migrate
+```
+
+```
 symfony console doctrine:fixtures:load
 ```
 
@@ -43,13 +51,10 @@ symfony console doctrine:fixtures:load
 symfony serve -d
 ```
 
-```
-adduser username
-chown username:username -R
-```
+Your application is available at http://localhost:8000
 
-Your application is available at http://127.0.0.1:8000
+Admin Inteface is available at http://localhost:8000/admin
 
-Admin Inteface at http://127.0.0.1:8000/admin
+PhpMyAdmin is available at http://localhost:8080
 
-PhpMyAdmin at ...
+MailDev is available at http://localhost:8081

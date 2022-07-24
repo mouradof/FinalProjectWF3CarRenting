@@ -1,0 +1,50 @@
+version: '3.7'
+services:
+
+  # Conteneur PHP -> http://localhost:8000
+  car-renting:
+    container_name: car-renting
+    build: ./php
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/var/www/html
+      - ./php/vhosts:/etc/apache2/sites-enabled
+
+  # Conteneur pour la BDD
+  database:
+    image: 'mysql:latest'
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db-car-renting
+    ports:
+      - '3306'
+    expose:
+      - '3306'
+
+  # Conteneur pour l'administration de la BDD -> http://localhost:8080
+  phpmyadmin:
+    depends_on:
+      - database
+    image: phpmyadmin
+    restart: on-failure
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: database
+
+  # Conteneur pour le serveur smtp de test -> http://localhost:8081
+  maildev:
+    image: maildev/maildev
+    container_name: maildev_docker_symfony
+    command: bin/maildev --web 80 --smtp 25 --hide-extensions STARTTLS
+    ports:
+      - "8081:80"
+    expose:
+      - '1025'
+    restart: always
+    networks:
+      - dev
+
+networks:
+  dev:
